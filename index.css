@@ -4,7 +4,30 @@ body {
   background-color: #efefef;
   font-family: Proxima Nova;
 }
+header {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+#header-icon {
+  margin: 0 10px 0 17px;
+  border-radius: 5px;
+}
+header p {
+  font-size: 13px;
+  line-height: 16px;
+}
 
+header p span {
+  color: #979797;
+}
+#header-install {
+  margin-left: auto;
+  margin-right: 16px;
+}
+#header-install img {
+  vertical-align: middle;
+}
 section {
   background-image: url('https://prodcdn.kidoodle.tv/kidoodle-2019-update/images/backgroundPattern.png');
   width: 100%;
@@ -40,7 +63,7 @@ img {
 
 /* SECTION TWO */
 
-#watch-now {
+.watch-now {
   display: block;
   margin: 0 auto;
   padding-top: 21px;
@@ -69,11 +92,36 @@ img {
   line-height: 24px;
   color: #979797;
   text-align: center;
-  margin: 24px 60px 81px 60px;
+  margin: 24px 60px 40px 60px;
 }
 
 #sub-text-action {
   font-weight: 700;
+}
+
+#sub-text-action a {
+  text-decoration: none;
+  color: #979797;
+}
+
+#tv-icons {
+  margin: 21px auto 21px auto;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 400px;
+}
+
+@media only screen and (max-width: 346px) {
+  #tv-icons {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#and-more {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .footer-text {
